@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer me conhecer melhor?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #telefone, #musica {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quer me conhecer melhor?</h1>
+    <button onclick="mostrarTelefone()">Sim</button>
+    <button onclick="mostrarMusica()">Não</button>
+
+    <div id="telefone">
+        <p>Meu número: (12) 99636-3579</p>
+    </div>
+    <div id="musica">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OPhefKpgTRk?si=lnk7SiE47giZr_h4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function mostrarTelefone() {
+            document.getElementById('telefone').style.display = 'block';
+            document.getElementById('musica').style.display = 'none';
+        }
+
+        function mostrarMusica() {
+            document.getElementById('musica').style.display = 'block';
+            document.getElementById('telefone').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
